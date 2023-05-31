@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "mini-paint-inn23"
+  },
+  "targets": {
+    "mini-paint-inn23": {
+      "hosting": {
+        "paint": [
+          "paintter"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
