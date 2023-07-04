@@ -13,8 +13,7 @@ const firebaseConfig = JSON.parse(
   process.env.REACT_APP_FIREBASE_CONFIG as string
 );
 
-const firebaseApp = initializeApp(firebaseConfig);
-console.log(firebaseApp);
+initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
