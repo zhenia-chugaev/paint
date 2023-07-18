@@ -6,7 +6,8 @@ import LogoutButton from './LogoutButton';
 import BouncingButton from './BouncingButton';
 import LoginForm from './LoginForm';
 import SignupForm from './SignupForm';
-import ErrorMessage from './ErrorMessage';
+import FilterForm from './FilterForm';
+import Message from './Message';
 import Drawings from './Drawings';
 import FeedList from './FeedList';
 
@@ -18,7 +19,8 @@ export {
   AuthForm,
   LoginForm,
   SignupForm,
-  ErrorMessage,
+  FilterForm,
+  Message,
   Logo,
   LogoutButton,
   BouncingButton,
