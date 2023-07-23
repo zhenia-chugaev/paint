@@ -1,4 +1,5 @@
-import { getDatabase, ref, get } from 'firebase/database';
+import { get } from 'firebase/database';
+import refs from './refs';
 
 interface Drawing {
   id: string;
@@ -11,11 +12,9 @@ interface Drawings {
   [id: Drawing['id']]: Drawing;
 }
 
-const getDrawingsRef = () => ref(getDatabase(), 'drawings');
-
 const loadDrawings = async () => {
-  const data = await get(getDrawingsRef());
-  return (data.exists() ? data.toJSON() : []) as Drawings;
+  const data = await get(refs.drawings());
+  return (data.exists() ? data.val() : {}) as Drawings;
 };
 
 export { loadDrawings };
